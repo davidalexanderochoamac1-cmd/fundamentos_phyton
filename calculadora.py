@@ -10,21 +10,21 @@ residuo = num1 % num2
 potencia = num1 ** num2
 
 #Elige la operación a realizar
-operacion = input("Ingrese la operación a realizar (suma, resta, multiplicación, división, división entera, residuo, potencia): ")
-if operacion == "suma":
+operacion = input("Ingrese la operación a realizar (1.suma, 2.resta, 3.multiplicación, 4.división, 5.división entera, 6.residuo, 7.potencia): ")
+if operacion == "1":
     resultado = suma
-elif operacion == "resta":
+elif operacion == "2":
     resultado = resta
-elif operacion == "multiplicación":
+elif operacion == "3":
     resultado = multiplicacion
-elif operacion == "división":
+elif operacion == "4":
     resultado = division
-elif operacion == "división entera":
+elif operacion == "5":
     resultado = division_entera
-elif operacion == "residuo":
+elif operacion == "6":
     resultado = residuo
-elif operacion == "potencia":
+elif operacion == "7":
     resultado = potencia
 
 # Imprime los resultados
-print("Resultado:", resultado)
+print ("Resultado:", resultado)

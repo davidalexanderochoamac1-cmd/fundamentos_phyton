@@ -3,8 +3,6 @@ Fundamentos de Programación
 """
 
 # Fundamentos de Programación
-from operator import truediv
-
 
 print("Hello, World!")
 
@@ -12,6 +10,8 @@ print("Hello, World!")
 camelCase = "sena"
 PascalCase = "Sena"
 snake_case = "sena"
+
+#Tarjeta de identificacion
 
 # Variables
 nombre = "David"
