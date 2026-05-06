@@ -1,30 +1,35 @@
-# Calculadora básica
-num1 = float(input("Ingrese el primer número: "))
-num2 = float(input("Ingrese el segundo número: "))
-suma = num1 + num2
-resta = num1 - num2
-multiplicacion = num1 * num2
-division = num1 / num2
-division_entera = num1 // num2
-residuo = num1 % num2
-potencia = num1 ** num2
+#Calculadors de notas 
+nota_1 = int(input("Ingrese la primera nota: "))
+while nota_1 < 0 or nota_1 > 5:
+    print("La nota debe estar entre 0 y 5. Intente nuevamente.")
+    nota_1 = int(input("Ingrese la primera nota: "))
 
-#Elige la operación a realizar
-operacion = input("Ingrese la operación a realizar (1.suma, 2.resta, 3.multiplicación, 4.división, 5.división entera, 6.residuo, 7.potencia): ")
-if operacion == "1":
-    resultado = suma
-elif operacion == "2":
-    resultado = resta
-elif operacion == "3":
-    resultado = multiplicacion
-elif operacion == "4":
-    resultado = division
-elif operacion == "5":
-    resultado = division_entera
-elif operacion == "6":
-    resultado = residuo
-elif operacion == "7":
-    resultado = potencia
+print("-" * 45)
 
-# Imprime los resultados
-print ("Resultado:", resultado)
+nota_2 = int(input("Ingrese la segunda nota: "))
+while nota_2 < 0 or nota_2 > 5:
+    print("La nota debe estar entre 0 y 5. Intente nuevamente.")
+    nota_2 = int(input("Ingrese la segunda nota: "))
+
+print("-" * 45)
+
+nota_3 = int(input("Ingrese la tercera nota: "))
+while nota_3 < 0 or nota_3 > 5:
+    print("La nota debe estar entre 0 y 5. Intente nuevamente.")
+    nota_3 = int(input("Ingrese la tercera nota: "))
+
+print("-" * 45)
+#promedio
+promedio = (nota_1 + nota_2 + nota_3) / 3
+
+print("=" * 45)
+print("                RESULTADO")
+print("=" * 45)
+if promedio >= 3:
+    print(f"El promedio es: {round(promedio)}. ¡Aprobado!")
+else:
+    #imprimir el promedio es {} reprobado le faltan x puntos para aprobar
+    puntos_faltantes = 3 - promedio
+    print(f"El promedio es: {round(promedio )}. Reprobado. Te faltan {round(puntos_faltantes)} puntos para aprobar.")
+    
+print("=" * 45)

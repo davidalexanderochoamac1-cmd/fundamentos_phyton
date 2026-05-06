@@ -6,7 +6,7 @@ b = True
 c = False
 
 print(f"El resultado de {a} AND {b} es: {a and b}")
-print(f"Elresultado de {a} AND {c} es: {a and c}")
+print(f"El resultado de {a} AND {c} es: {a and c}")
 print(f"El resultado de {c} AND {b} es: {c and b}") 
 print(f"El resultado de {c} AND {c} es: {c and c}")
 
