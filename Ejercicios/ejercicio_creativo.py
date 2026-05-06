@@ -67,25 +67,25 @@ barra_carga()
 print("")
 
 # ===================== RESULTADO =====================
-
+print("")
 # Comparación de elecciones
 if seleccion == random:
-    print("Empate")
+    print("EMPATE")
 
 elif seleccion == 1 and random == 3:
-    print("Ganaste, piedra gana a tijera")
+    print("GANASTE, piedra gana a tijera")
 
 elif seleccion == 2 and random == 1:
-    print("Ganaste, papel gana a piedra")
+    print("GANASTE, papel gana a piedra")
 
 elif seleccion == 3 and random == 2:
-    print("Ganaste, tijera gana a papel")
+    print("GANASTE, tijera gana a papel")
 
 elif seleccion == 1 and random == 2:
-    print("Perdiste, papel gana a piedra")
+    print("PERDISTE, papel gana a piedra")
 
 elif seleccion == 2 and random == 3:
-    print("Perdiste, tijera gana a papel")
+    print("PERDISTE, tijera gana a papel")
 
 elif seleccion == 3 and random == 1:
-    print("Perdiste, piedra gana a tijera")
+    print("PESRDISTE, piedra gana a tijera")

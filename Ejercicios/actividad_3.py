@@ -1,7 +1,6 @@
 # ===================== CLASIFICADOR DE IMC =====================
 
 # ===================== VALIDACIÓN DE PESO =====================
-
 # Se pide el peso al usuario
 peso = float(input("Ingrese su peso en kilogramos: "))
 
@@ -19,7 +18,6 @@ while not validar_peso(peso):
 print("-" * 45)
 
 # ===================== VALIDACIÓN DE ESTATURA =====================
-
 # Se pide la estatura al usuario
 estatura = float(input("Ingrese su estatura en metros: "))
 
@@ -42,7 +40,6 @@ print("-" * 45)
 imc = peso / (estatura ** 2)
 
 # ===================== RESULTADO =====================
-
 print("=" * 45)
 print("                RESULTADO")
 print("=" * 45)
@@ -54,7 +51,6 @@ print(f"Estatura ingresada: {round(estatura, 2)} m")
 print("-" * 45)
 
 # ===================== CLASIFICACIÓN =====================
-
 # Según el valor del IMC se clasifica
 if imc < 18.5:
     print(f"Tu IMC es: {round(imc, 2)}. Clasificación: Bajo peso")
