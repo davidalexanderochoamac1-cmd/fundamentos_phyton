@@ -1,3 +1,17 @@
+#Librerias matematicas
+import math
+import random
+
+#Math
+print(f"El valor de π es: {math.pi}")
+print(f"El valor de e es: {math.e}")
+print(f"La raíz cuadrada de 32 es: {math.sqrt(32)}")
+
+#Random
+random.random() #Genera un número aleatorio entre 0 y 1
+numero_aleatorio = random.randint(1, 100) #Genera un número aleatorio entre 1 y 100
+print(f"Un número aleatorio entre 1 y 100 es: {numero_aleatorio}")
+
 #Operadores aritméticos
 
 a = 10
@@ -50,15 +64,3 @@ print(f"El resultado de la operación {a} * ({b} // 3) es: {resultado_5}")
 
 resultado_6 = ((a**b)) / ((2*a)-(a+b))
 print(f"El resultado de la operación (({a}**{b}))/(({a}+{b})-(2*{a})) es: {resultado_6}")
-
-#Librerias matematicas
-import math
-
-print(f"El valor de π es: {math.pi}")
-print(f"El valor de e es: {math.e}")
-print(f"La raíz cuadrada de 32 es: {math.sqrt(32)}")
-
-import random
-random.random() #Genera un número aleatorio entre 0 y 1
-numero_aleatorio = random.randint(1, 100) #Genera un número aleatorio entre 1 y 100
-print(f"Un número aleatorio entre 1 y 100 es: {numero_aleatorio}")
