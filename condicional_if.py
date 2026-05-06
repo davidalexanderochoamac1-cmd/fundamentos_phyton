@@ -1,5 +1,5 @@
 #Condicional if elif else
-"""
+
 if True:
     print("La primera condicion es verdadera")
 elif False:
@@ -7,9 +7,9 @@ elif False:
 elif False:
     print("La tercera condicion es verdadera")
 else:
-    print("La condicion es falsa")"""
+    print("La condicion es falsa")
 
-"""#Ejercicio: Clasificacion de Edad
+#Ejercicio: Clasificacion de Edad
 edad = int(input("Ingrese su edad: "))
 
 
@@ -22,7 +22,7 @@ elif edad >= 65 and edad <= 100:
 elif edad == 0:
     print("Edad no valida")
 else:
-    print("Edad no valida")"""
+    print("Edad no valida")
 
 
 #if anidados
@@ -44,9 +44,9 @@ else:
 #Operador ternario
 numero = int(input("Ingrese un numero: "))
 
-"""if numero % 2 == 0:
+if numero % 2 == 0:
     print(f"El numero {numero} es par")
 else:
-    print(f"El numero {numero} es impar")"""
+    print(f"El numero {numero} es impar")
 
 print(f"El numero {numero} es par" if numero % 2 == 0 else f"El numero {numero} es impar")
