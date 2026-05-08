@@ -1,136 +1,128 @@
 import math
 
-#Ejercicio 1
+# Ejercicio 1
 
 nombre = "David"
 valor = 3
 promedio = 3.1
 
-print (f"{nombre} su nota es {valor} y su promedio es {promedio} ")
+print(f"{nombre} su nota es {valor} y su promedio es {promedio}")
 print("")
 
-#Ejercicio 2
+# Ejercicio 2
 
-variable_entero_1 = int(input("ingrese un numero entero: "))
-variable_entero_2 = int(input("ingrese un numero entero: "))
+variable_entero_uno = int(input("Ingrese un número entero: "))
+variable_entero_dos = int(input("Ingrese un número entero: "))
 
-variable_float = float(input("ingrese un numero flotante: "))
+variable_float = float(input("Ingrese un número flotante: "))
 
-variable_string_1 = input("ingrese una cadena de texto: ")
-variable_string_2 = input("ingrese una cadena de texto: ")
+variable_string_uno = input("Ingrese una cadena de texto: ")
+variable_string_dos = input("Ingrese una cadena de texto: ")
 
-suma_numeros = float(variable_entero_1 + variable_entero_2 + variable_float)
+suma_numeros = float(variable_entero_uno + variable_entero_dos + variable_float)
 
-print (f"La suma de los 3 numeros es :{suma_numeros}")
+print(f"La suma de los 3 números es: {suma_numeros}")
 
-if variable_entero_1 > variable_entero_2:
-    print (f"Este es el entero mayor {variable_entero_1}")
+if variable_entero_uno > variable_entero_dos:
+    print(f"Este es el entero mayor {variable_entero_uno}")
 
-elif variable_entero_2 > variable_entero_1:
-    print (f"Este es el entero mayor {variable_entero_2}")
+elif variable_entero_dos > variable_entero_uno:
+    print(f"Este es el entero mayor {variable_entero_dos}")
 
 else:
-    print (f"El nuemro {variable_entero_2} y el numero {variable_entero_1} son iguales")
+    print(f"El número {variable_entero_dos} y el número {variable_entero_uno} son iguales")
 
-print (f"La división del float con el resto de la división de los dos enteros es: {(variable_entero_1/variable_entero_2)/variable_float}") 
+print(f"La división del float con el resto de la división de los dos enteros es: {(variable_entero_uno / variable_entero_dos) / variable_float}")
 
-print (f"Estas dos son cadenas de texto {variable_string_1}{variable_string_2}")
+print(f"Estas dos son cadenas de texto {variable_string_uno}{variable_string_dos}")
 
 print("")
 
-#Ejercicio 3
+# Ejercicio 3
 
 base = 3
 exponente = 5
 
-print (f"la potencia de {base} y {exponente} es {base ** exponente}")
+print(f"La potencia de {base} y {exponente} es {base ** exponente}")
 
 print("")
 
-#Ejercicio 4
+# Ejercicio 4
 
-a = 2
-b = 8
-c = 9
-d = 27
-e = 28
-f = 55
-g = 121
+numero_a = 2
+numero_b = 8
+numero_c = 9
+numero_d = 27
+numero_e = 28
+numero_f = 55
+numero_g = 121
 
-print("Raíz cuadrada de 2:", math.sqrt(a))
-print("Raíz cuadrada de 8:", math.sqrt(b))
-print("Raíz cuadrada de 9:", math.sqrt(c))
-print("Raíz cuadrada de 27:", math.sqrt(d))
-print("Raíz cuadrada de 28:", math.sqrt(e))
-print("Raíz cuadrada de 55:", math.sqrt(f))
-print("Raíz cuadrada de 121:", math.sqrt(g))
-
+print("Raíz cuadrada de 2:", math.sqrt(numero_a))
+print("Raíz cuadrada de 8:", math.sqrt(numero_b))
+print("Raíz cuadrada de 9:", math.sqrt(numero_c))
+print("Raíz cuadrada de 27:", math.sqrt(numero_d))
+print("Raíz cuadrada de 28:", math.sqrt(numero_e))
+print("Raíz cuadrada de 55:", math.sqrt(numero_f))
+print("Raíz cuadrada de 121:", math.sqrt(numero_g))
 
 # Ejercicio 5
 
 nombre_estudiante = "Carlos"
 
+nota_uno = 4.5
+nota_dos = 3.8
+nota_tres = 4.2
+nota_cuatro = 5.0
+nota_cinco = 4.7
 
-nota1 = 4.5
-nota2 = 3.8
-nota3 = 4.2
-nota4 = 5.0
-nota5 = 4.7
-
-promedio = (nota1 + nota2 + nota3 + nota4 + nota5) / 5
-
+promedio = (nota_uno + nota_dos + nota_tres + nota_cuatro + nota_cinco) / 5
 
 print("Nombre del estudiante:", nombre_estudiante)
 print("Promedio final:", promedio)
-
 
 if promedio >= 3.0:
     print("El estudiante aprobó.")
 else:
     print("El estudiante reprobó.")
 
-# Ejercicio 6 
+# Ejercicio 6
 
-numero_uno = int(8.3) 
+numero_uno = int(8.3)
 numero_dos = int(2.1)
 
-
 print("Valores originales:")
-print("numeroUno =", numero_uno)
-print("numeroDos =", numero_dos)
+print("numero_uno =", numero_uno)
+print("numero_dos =", numero_dos)
 
 auxiliar = numero_uno
 numero_uno = numero_dos
 numero_dos = auxiliar
 
-
-
 print("Valores intercambiados:")
-print("numeroUno =", numero_uno)
-print("numeroDos =", numero_dos)
+print("numero_uno =", numero_uno)
+print("numero_dos =", numero_dos)
 
-# Ejercicio 7 
+# Ejercicio 7
 
-Estado = (5 == 2) or (2 > 1)
+estado = (5 == 2) or (2 > 1)
 
-print("El valor de Estado es:", Estado)
+print("El valor de estado es:", estado)
 
-# Ejercicio 8 
+# Ejercicio 8
 
-Resultado = (9 / 3) + (8 * 2) - (5 + 1) + (10 % 3) + (2 ** 3)
+resultado = (9 / 3) + (8 * 2) - (5 + 1) + (10 % 3) + (2 ** 3)
 
-print("El resultado de la operación es:", Resultado)
+print("El resultado de la operación es:", resultado)
 
-#Ejercicio 9
+# Ejercicio 9
 
 lado_cuadrado = 8
 
-areaCuadrado = lado_cuadrado * lado_cuadrado
-perimetroCuadrado = lado_cuadrado * 4
+area_cuadrado = lado_cuadrado * lado_cuadrado
+perimetro_cuadrado = lado_cuadrado * 4
 
-print("Área del cuadrado:", areaCuadrado)
-print("Perímetro del cuadrado:", perimetroCuadrado)
-
+print("Área del cuadrado:", area_cuadrado)
+print("Perímetro del cuadrado:", perimetro_cuadrado)
 
 base_triangulo = 9
 altura_triangulo = 8
@@ -138,20 +130,19 @@ lado_uno_triangulo = 8
 lado_dos_triangulo = 8
 
 area_triangulo = (base_triangulo * altura_triangulo) / 2
-perimetroTriangulo = base_triangulo + lado_uno_triangulo + lado_dos_triangulo
+perimetro_triangulo = base_triangulo + lado_uno_triangulo + lado_dos_triangulo
 
 print("Área del triángulo:", area_triangulo)
-print("Perímetro del triángulo:", perimetroTriangulo)
+print("Perímetro del triángulo:", perimetro_triangulo)
 
+base_rectangulo = 8
+altura_rectangulo = 6
 
-baseRectangulo = 8
-alturaRectangulo = 6
+area_rectangulo = base_rectangulo * altura_rectangulo
+perimetro_rectangulo = 2 * (base_rectangulo + altura_rectangulo)
 
-areaRectangulo = baseRectangulo * alturaRectangulo
-perimetroRectangulo = 2 * (baseRectangulo + alturaRectangulo)
-
-print("Área del rectángulo:", areaRectangulo)
-print("Perímetro del rectángulo:", perimetroRectangulo)
+print("Área del rectángulo:", area_rectangulo)
+print("Perímetro del rectángulo:", perimetro_rectangulo)
 
 # Ejercicio 10
 
