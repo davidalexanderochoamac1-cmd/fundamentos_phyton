@@ -8,13 +8,13 @@ vector_2 = (-1, 0, 2)
 producto_escalar = vector_1 + vector_2
 
 # Mostrar el resultado
-print(sorted(producto_escalar))
+print(sorted(producto_escalar),"\n")
 
 # 2. Escribir un programa que almacene en una lista los siguientes
 # precios, 50, 75, 46, 22, 80, 65, 8, y muestre por pantalla el menor y el
 # mayor de los precios.
 
-precios = [50, 75, 46, 22, 80, 65, 8]
+precios = (50, 75, 46, 22, 80, 65, 8)
 
 print("El menor precio es:", min(precios))
 print("El mayor precio es:", max(precios))
