@@ -1,0 +1,471 @@
+HOLA MUNDO ESTOY APRENDIENDO A MANEJAR ARCHIVOS CON PYTHON
+
+############################################################
+##                COLECCION DE LENGUAJES                 ##
+############################################################
+
+-------------------- [ PYTHON ] --------------------
+nombre = "David"
+apellido = "Ochoa"
+edad = 18
+activo = True
+programa = "ADSO"
+notas = [4.5, 3.8, 4.2, 5.0]
+print(nombre)
+print(apellido)
+print(edad)
+print(activo)
+print(programa)
+print(notas)
+promedio = sum(notas) / len(notas)
+print(promedio)
+if promedio >= 3:
+    print("Aprobado")
+else:
+    print("Reprobado")
+for nota in notas:
+    print(nota)
+for indice, nota in enumerate(notas):
+    print(indice, nota)
+def saludar(nombre):
+    return f"Hola {nombre}"
+mensaje = saludar(nombre)
+print(mensaje)
+cuadrados = []
+for numero in range(1, 6):
+    cuadrados.append(numero ** 2)
+print(cuadrados)
+datos = {
+    "programa": "ADSO",
+    "ficha": 3321349,
+    "ciudad": "Tunja"
+}
+print(datos["programa"])
+for clave, valor in datos.items():
+    print(clave, valor)
+with open("registro.txt", "w", encoding="utf-8") as archivo:
+    archivo.write("Linea 1\n")
+    archivo.write("Linea 2\n")
+print("Archivo creado")
+print("Fin del bloque Python")
+
+------------------ [ JAVASCRIPT ] -------------------
+const nombreJs = "Laura";
+const apellidoJs = "Gomez";
+const edadJs = 21;
+const activoJs = true;
+const programaJs = "ADSO";
+const notasJs = [4.0, 3.5, 4.8, 5.0];
+console.log(nombreJs);
+console.log(apellidoJs);
+console.log(edadJs);
+console.log(activoJs);
+console.log(programaJs);
+console.log(notasJs);
+let sumaJs = 0;
+for (let i = 0; i < notasJs.length; i++) {
+  sumaJs += notasJs[i];
+}
+const promedioJs = sumaJs / notasJs.length;
+console.log(promedioJs);
+if (promedioJs >= 3) {
+  console.log("Aprobado");
+} else {
+  console.log("Reprobado");
+}
+for (const nota of notasJs) {
+  console.log(nota);
+}
+function saludarJs(nombre) {
+  return `Hola ${nombre}`;
+}
+console.log(saludarJs(nombreJs));
+const cuadradosJs = [];
+for (let numero = 1; numero <= 5; numero++) {
+  cuadradosJs.push(numero * numero);
+}
+console.log(cuadradosJs);
+const datosJs = { programa: "ADSO", ficha: 3321349, ciudad: "Bogota" };
+console.log(datosJs.programa);
+Object.entries(datosJs).forEach(([clave, valor]) => console.log(clave, valor));
+console.log("Fin del bloque JavaScript");
+
+---------------------- [ JAVA ] ---------------------
+public class EjemploJava {
+    public static void main(String[] args) {
+        String nombreJava = "Carlos";
+        String apellidoJava = "Perez";
+        int edadJava = 20;
+        boolean activoJava = true;
+        String programaJava = "ADSO";
+        double[] notasJava = {4.2, 3.9, 4.7, 5.0};
+        System.out.println(nombreJava);
+        System.out.println(apellidoJava);
+        System.out.println(edadJava);
+        System.out.println(activoJava);
+        System.out.println(programaJava);
+        double sumaJava = 0;
+        for (double nota : notasJava) {
+            sumaJava += nota;
+            System.out.println(nota);
+        }
+        double promedioJava = sumaJava / notasJava.length;
+        System.out.println(promedioJava);
+        if (promedioJava >= 3) {
+            System.out.println("Aprobado");
+        } else {
+            System.out.println("Reprobado");
+        }
+        for (int i = 0; i < notasJava.length; i++) {
+            System.out.println(i + " " + notasJava[i]);
+        }
+        String saludo = saludarJava(nombreJava);
+        System.out.println(saludo);
+        int[] cuadradosJava = new int[5];
+        for (int numero = 1; numero <= 5; numero++) {
+            cuadradosJava[numero - 1] = numero * numero;
+        }
+        for (int valor : cuadradosJava) {
+            System.out.println(valor);
+        }
+        System.out.println("Fin del bloque Java");
+    }
+    public static String saludarJava(String nombre) {
+        return "Hola " + nombre;
+    }
+}
+
+---------------------- [ RUST ] ---------------------
+fn saludar_rust(nombre: &str) -> String {
+    format!("Hola {}", nombre)
+}
+fn main() {
+    let nombre_rust = "Sofia";
+    let apellido_rust = "Lopez";
+    let edad_rust = 22;
+    let activo_rust = true;
+    let programa_rust = "ADSO";
+    let notas_rust = vec![4.1, 3.7, 4.9, 5.0];
+    println!("{}", nombre_rust);
+    println!("{}", apellido_rust);
+    println!("{}", edad_rust);
+    println!("{}", activo_rust);
+    println!("{}", programa_rust);
+    println!("{:?}", notas_rust);
+    let mut suma_rust = 0.0;
+    for nota in &notas_rust {
+        suma_rust += nota;
+        println!("{}", nota);
+    }
+    let promedio_rust = suma_rust / notas_rust.len() as f64;
+    println!("{}", promedio_rust);
+    if promedio_rust >= 3.0 {
+        println!("Aprobado");
+    } else {
+        println!("Reprobado");
+    }
+    for (indice, nota) in notas_rust.iter().enumerate() {
+        println!("{} {}", indice, nota);
+    }
+    let saludo_rust = saludar_rust(nombre_rust);
+    println!("{}", saludo_rust);
+    let mut cuadrados_rust = Vec::new();
+    for numero in 1..=5 {
+        cuadrados_rust.push(numero * numero);
+    }
+    println!("{:?}", cuadrados_rust);
+    println!("Privet mir");
+    println!("Moskva");
+    println!("Cirilico");
+    println!("Fin del bloque Rust");
+}
+
+---------------------- [ C++ ] ----------------------
+#include <iostream>
+#include <vector>
+using namespace std;
+int main() {
+    string nombreCpp = "Mateo";
+    int edadCpp = 19;
+    bool activoCpp = true;
+    vector<double> notasCpp = {4.0, 3.6, 4.8, 5.0};
+    cout << nombreCpp << endl;
+    cout << edadCpp << endl;
+    cout << activoCpp << endl;
+    double sumaCpp = 0;
+    for (double nota : notasCpp) {
+        sumaCpp += nota;
+        cout << nota << endl;
+    }
+    double promedioCpp = sumaCpp / notasCpp.size();
+    cout << promedioCpp << endl;
+    if (promedioCpp >= 3) {
+        cout << "Aprobado" << endl;
+    } else {
+        cout << "Reprobado" << endl;
+    }
+    for (int i = 0; i < notasCpp.size(); i++) {
+        cout << i << " " << notasCpp[i] << endl;
+    }
+    cout << "Fin del bloque C++" << endl;
+    return 0;
+}
+
+----------------------- [ GO ] ----------------------
+package main
+import "fmt"
+func main() {
+    nombreGo := "Camila"
+    edadGo := 23
+    activoGo := true
+    notasGo := []float64{4.2, 3.8, 4.9, 5.0}
+    fmt.Println(nombreGo)
+    fmt.Println(edadGo)
+    fmt.Println(activoGo)
+    sumaGo := 0.0
+    for _, nota := range notasGo {
+        sumaGo += nota
+        fmt.Println(nota)
+    }
+    promedioGo := sumaGo / float64(len(notasGo))
+    fmt.Println(promedioGo)
+    if promedioGo >= 3 {
+        fmt.Println("Aprobado")
+    } else {
+        fmt.Println("Reprobado")
+    }
+    for indice, nota := range notasGo {
+        fmt.Println(indice, nota)
+    }
+    fmt.Println("Fin del bloque Go")
+}
+
+-------------------- [ KOTLIN ] ---------------------
+fun main() {
+    val nombreKotlin = "Valentina"
+    val edadKotlin = 20
+    val activoKotlin = true
+    val notasKotlin = listOf(4.3, 3.9, 4.7, 5.0)
+    println(nombreKotlin)
+    println(edadKotlin)
+    println(activoKotlin)
+    var sumaKotlin = 0.0
+    for (nota in notasKotlin) {
+        sumaKotlin += nota
+        println(nota)
+    }
+    val promedioKotlin = sumaKotlin / notasKotlin.size
+    println(promedioKotlin)
+    if (promedioKotlin >= 3) {
+        println("Aprobado")
+    } else {
+        println("Reprobado")
+    }
+    for ((indice, nota) in notasKotlin.withIndex()) {
+        println("$indice $nota")
+    }
+    println("Fin del bloque Kotlin")
+}
+
+--------------------- [ SWIFT ] ---------------------
+let nombreSwift = "Andres"
+let edadSwift = 24
+let activoSwift = true
+let notasSwift = [4.1, 3.7, 4.6, 5.0]
+print(nombreSwift)
+print(edadSwift)
+print(activoSwift)
+var sumaSwift = 0.0
+for nota in notasSwift {
+    sumaSwift += nota
+    print(nota)
+}
+let promedioSwift = sumaSwift / Double(notasSwift.count)
+print(promedioSwift)
+if promedioSwift >= 3 {
+    print("Aprobado")
+} else {
+    print("Reprobado")
+}
+for (indice, nota) in notasSwift.enumerated() {
+    print(indice, nota)
+}
+print("Fin del bloque Swift")
+
+---------------------- [ RUBY ] ---------------------
+nombre_ruby = "Julian"
+edad_ruby = 25
+activo_ruby = true
+notas_ruby = [4.0, 3.8, 4.5, 5.0]
+puts nombre_ruby
+puts edad_ruby
+puts activo_ruby
+suma_ruby = 0
+notas_ruby.each do |nota|
+  suma_ruby += nota
+  puts nota
+end
+promedio_ruby = suma_ruby / notas_ruby.length
+puts promedio_ruby
+if promedio_ruby >= 3
+  puts "Aprobado"
+else
+  puts "Reprobado"
+end
+notas_ruby.each_with_index do |nota, indice|
+  puts "#{indice} #{nota}"
+end
+puts "Fin del bloque Ruby"
+
+----------------------- [ PHP ] ---------------------
+<?php
+$nombrePhp = "Diana";
+$edadPhp = 22;
+$activoPhp = true;
+$notasPhp = [4.4, 3.9, 4.8, 5.0];
+echo $nombrePhp . "\n";
+echo $edadPhp . "\n";
+echo $activoPhp . "\n";
+$sumaPhp = 0;
+foreach ($notasPhp as $nota) {
+    $sumaPhp += $nota;
+    echo $nota . "\n";
+}
+$promedioPhp = $sumaPhp / count($notasPhp);
+echo $promedioPhp . "\n";
+if ($promedioPhp >= 3) {
+    echo "Aprobado\n";
+} else {
+    echo "Reprobado\n";
+}
+foreach ($notasPhp as $indice => $nota) {
+    echo $indice . " " . $nota . "\n";
+}
+echo "Fin del bloque PHP\n";
+?>
+
+------------------------ [ R ] ----------------------
+nombre_r <- "Paula"
+edad_r <- 21
+activo_r <- TRUE
+notas_r <- c(4.2, 3.8, 4.7, 5.0)
+print(nombre_r)
+print(edad_r)
+print(activo_r)
+print(notas_r)
+promedio_r <- mean(notas_r)
+print(promedio_r)
+if (promedio_r >= 3) {
+  print("Aprobado")
+} else {
+  print("Reprobado")
+}
+for (nota in notas_r) {
+  print(nota)
+}
+for (i in seq_along(notas_r)) {
+  print(paste(i, notas_r[i]))
+}
+print("Fin del bloque R")
+
+---------------------- [ SQL ] ----------------------
+CREATE TABLE aprendices (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(50),
+    edad INT,
+    programa VARCHAR(50),
+    nota DECIMAL(3,1)
+);
+INSERT INTO aprendices VALUES (1, 'David', 18, 'ADSO', 4.5);
+INSERT INTO aprendices VALUES (2, 'Laura', 21, 'ADSO', 4.0);
+INSERT INTO aprendices VALUES (3, 'Carlos', 20, 'ADSO', 4.8);
+SELECT * FROM aprendices;
+SELECT nombre, nota FROM aprendices;
+SELECT AVG(nota) AS promedio FROM aprendices;
+SELECT nombre FROM aprendices WHERE nota >= 3.0;
+UPDATE aprendices SET nota = 5.0 WHERE id = 2;
+DELETE FROM aprendices WHERE id = 3;
+SELECT * FROM aprendices;
+-- Fin del bloque SQL
+
+---------------------- [ HTML ] ---------------------
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplo HTML</title>
+</head>
+<body>
+    <h1>Aprendiendo HTML</h1>
+    <p>Este es un ejemplo de parrafo.</p>
+    <ul>
+        <li>Python</li>
+        <li>Java</li>
+        <li>Rust</li>
+    </ul>
+    <a href="https://example.com">Enlace</a>
+    <button>Enviar</button>
+</body>
+</html>
+
+---------------------- [ CSS ] ----------------------
+body {
+    background-color: #f4f4f4;
+    color: #222222;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    color: #0057a3;
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+ul {
+    padding: 10px;
+}
+li {
+    margin-bottom: 8px;
+}
+button {
+    background-color: #0057a3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+------------------- [ TYPESCRIPT ] ------------------
+type Aprendiz = {
+  nombre: string;
+  edad: number;
+  activo: boolean;
+  notas: number[];
+};
+const aprendizTs: Aprendiz = {
+  nombre: "Sara",
+  edad: 22,
+  activo: true,
+  notas: [4.3, 3.7, 4.9, 5.0]
+};
+console.log(aprendizTs.nombre);
+console.log(aprendizTs.edad);
+console.log(aprendizTs.activo);
+let sumaTs = 0;
+for (const nota of aprendizTs.notas) {
+  sumaTs += nota;
+  console.log(nota);
+}
+const promedioTs: number = sumaTs / aprendizTs.notas.length;
+console.log(promedioTs);
+if (promedioTs >= 3) {
+  console.log("Aprobado");
+} else {
+  console.log("Reprobado");
+}
+console.log("Fin del bloque TypeScript");
+
+############################################################
+##                    FIN DEL ARCHIVO                     ##
+############################################################
